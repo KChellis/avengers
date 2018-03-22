@@ -6,46 +6,47 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title></title>
+    <title>Avengers Quiz</title>
   </head>
   <body>
     <div class="container">
-      <h1>Who are you?</h1>
+      <h1>Which Avenger are you?</h1>
       <h2>Find out below!</h2>
       <form id="avengers">
         <div class="firstQ">
           <label for="firstQ">How do you enter a room?</label>
           <select class="form-control" id="firstQ">
-            <option value="">The front door</option>
-            <option value="">Through a portal</option>
-            <option value="">Through a wall</option>
-            <option value="">From above</option>
+            <option value="wc">The front door</option>
+            <option value="d">Through a portal</option>
+            <option value="b">Through a wall</option>
+            <option value="ih">From above</option>
           </select>
         </div>
         <div class="secondQ">
-          <label for="secondQ">How do you prefer combat?</label>
+          <label for="secondQ">How do you fight?</label>
           <select class="form-control" id="secondQ">
-            <option value="">Fisticuffs</option>
-            <option value="">Ranged weapons</option>
-            <option value="">Blades</option>
-            <option value="">Unconventional Weapons</option>
+            <option value="wb">Fisticuffs</option>
+            <option value="ih">Ranged weapons</option>
+            <option value="dc">Unconventional Weapons</option>
           </select>
         </div>
         <div class="thirdQ">
           <label for="thirdQ">Do you lead with your head or your heart?</label>
           <select class="form-control" id="thirdQ">
-            <option value="">Head</option>
-            <option value="">Heart</option>
+            <option value="idw">Head</option>
+            <option value="bhc">Heart</option>
           </select>
         </div>
         <div class="fourthQ">
           <label for="fourthQ">Do you like facial hair?</label>
           <select class="form-control" id="fourthQ">
-            <option value="">mmmmBeards!</option>
-            <option value="">eeewwww Gross!</option>
+            <option value="hdi">mmmmBeards!</option>
+            <option value="wbc">eeewwww Gross!</option>
           </select>
         </div>
+        <button type="submit" class="btn btn-danger" name="button">Fight Me!</button>
       </form>
+      <p id="result"></p>
     </div>
   </body>
 </html>
